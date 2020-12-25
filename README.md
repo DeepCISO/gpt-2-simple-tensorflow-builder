@@ -16,12 +16,17 @@ This is released under permissive license so you don't have to spend two days in
 
 ## Usage
 
+If you'd like to build with the defaults (anything your CPU can take advantage of) you can run the Docker image directly (either by building or downloading off Docker Hub), and receive a TensorFlow binary tailored to your CPU in between 2 and 12 hours:
+
 ```
 docker run -v $PWD:/mnt deepciso/gpt-2-simple-tensorflow-builder:1.15.4-cp36-linux-x86
 ```
 
+If you want to change anything, for example building a TF 1.15.4 binary for a CPU which is *not* the CPU you are running the Docker image on, you should enter an interactive shell on the Docker image and follow approximately these guidelines (changing configuration options for your specific usecase).
+
 ```
 docker run -it -w /build/tensorflow -v $PWD:/mnt deepciso/gpt-2-simple-tensorflow-builder:1.15.4-cp36-linux-x86
+
 # configure the build to your liking; note: no GPU support is possible without Dockerfile modifications
 python3 configure.py
 # use bazel to build tensorflow, adding any additional configuration options as desired
