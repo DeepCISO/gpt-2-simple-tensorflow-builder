@@ -6,7 +6,7 @@ Builds niche TensorFlow binaries from source for your CPU architecture.
 
 Existing [alternative build sources](https://github.com/lakshayg/tensorflow-build) do not provide their build environment, so building TensorFlow for our own CPU architecture forced us to start from scratch. Which is frustrating. So maybe you won't have to.
 
-If you need something specific that isn't a build of `tensorflow-1.15.4-cp36-cp36m-linux_x86_64.whl`, please enjoy adapting the Dockerfile (comments available within) and consider pusblishing your own version or contributing upstream. We will release new Docker images as needed for our own use, and will consider issues requesting specific configurations, but don't count on it.
+If you need something specific that isn't a build of `tensorflow-1.15.4-cp36-cp36m-linux_x86_64.whl`, please enjoy adapting the Dockerfile (comments available within) and consider publishing your own version or contributing upstream. We will release new Docker images as needed for our own use, and will consider issues requesting specific configurations, but don't count on it.
 
 ## FAQ
 
