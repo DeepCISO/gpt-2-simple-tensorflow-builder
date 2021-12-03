@@ -4,7 +4,7 @@ Builds niche TensorFlow wheels from source for your CPU architecture, out-of-the
 
 | TensorFlow Version | Python Version | CPU Architecture | On Docker? |
 |:------------------:|:--------------:|------------------|------------|
-| 1.15.4             |            3.6 |          aarch64 | Soon! |
+| 1.15.4             |            3.6 |          aarch64 | [Yes!](https://hub.docker.com/layers/180451706/deepciso/tensorflow-docker-build-env/1.15.4-cp36-linux-aarch64/images/sha256-152393f037a4e1253c95b38c7098afd3d68e08e84bb964a63738ee8c1f2ccdd9) |
 | 1.15.4             |            3.6 |              x86 | [Yes!](https://hub.docker.com/layers/131384108/deepciso/tensorflow-docker-build-env/1.15.4-cp36-linux-x86/images/sha256-c628a0f982bc626d4ecd7162c21e4e200df135f856ae7405e70ee03c2d9be35b) |
 
 ## Background
